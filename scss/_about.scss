@@ -1,17 +1,70 @@
 .about-section {
-  padding: 10rem 0;
+  padding: 10rem 5rem;
+
+  max-width: 1280px;
+  margin: 0 auto;
   // background: linear-gradient(
   //   to bottom,
   //   $black 0%,
   //   #{fade-out($black, 0.1)} 75%,
   //   #{fade-out($black, 0.2)} 100%
   // );
+  @media (max-width: 768px) {
+    padding: 5rem 1rem 5rem 2rem;
+  }
   p {
     margin-bottom: 5rem;
+    color: rgba(0, 0, 0, 0.69);
+  }
+  .description {
+    line-height: 39px;
+    margin-top: -90px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .h1 {
+    font-family: "Roboto" !important;
+    color: black;
+    font-weight: 400 !important;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    width: auto;
+    display: inline-block;
+    font-size: 32px;
+  }
+  .fas-custom {
+    top: 3px;
+    position: relative;
+  }
+  .glyph-large {
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .glyph-small {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .header-url {
+    color: black;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
   }
 }
 .keurmerk {
   width: 380px;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.btn.sign-up {
+  font-family: "Times new Roman";
+  border: 1px solid grey;
+  border-radius: 0;
+  box-shadow: none !important;
+  color: rgba(0, 0, 0, 0.69);
 }

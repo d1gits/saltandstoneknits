@@ -14,8 +14,25 @@
   transition: background-color 0.3s ease-in-out;
 }
 
+@media (max-width: 680px) {
+  #mainNav {
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
 #mainNav .logo {
-  max-height: 80px;
+  max-height: 92px;
+  padding: 10px 0;
+}
+
+@media (max-width: 680px) {
+  #mainNav .logo {
+    padding: 15px 0;
+    max-height: 70px;
+    padding: 10px 0;
+  }
 }
 
 #mainNav .flexie {
@@ -54,13 +71,14 @@
 #mainNav .navbar-brand {
   color: #161616;
   font-weight: 700;
+  margin: 0 auto;
 }
 
 @media (max-width: 680px) {
   #mainNav .navbar-brand {
-    margin: 0 auto;
+    margin: 15px 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -117,48 +135,92 @@
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
-  padding: 15rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.6)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/taalcentrum_europoort.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.6) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/taalcentrum_europoort.jpg");
-  background-position: center;
+  background: url("../img/header.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  height: 280px;
+}
+
+.masthead .hello {
+  position: relative;
+  padding-bottom: 40px;
+  border-bottom: 2px solid black;
+  width: 415px;
+}
+
+@media (max-width: 768px) {
+  .masthead .hello {
+    padding-top: 130px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin-left: 10px;
+    width: 215px;
+    border-bottom: 1px solid black;
+  }
+}
+
+.masthead .description {
+  line-height: 39px;
+  width: 415px;
+  margin-top: 40px;
+  color: rgba(0, 0, 0, 0.69);
+}
+
+@media (max-width: 768px) {
+  .masthead .description {
+    display: none;
+  }
 }
 
 .masthead h1 {
-  color: white;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.7rem;
+  color: #dedede;
+  font-weight: 100;
+  font-family: "Times new Roman";
+  font-size: 61px;
+}
+
+@media (max-width: 768px) {
+  .masthead h1 {
+    margin-left: -17px;
+  }
 }
 
 .masthead h2 {
-  max-width: 20rem;
-  font-size: 1rem;
+  font-size: 22px;
+  top: 167px;
+  left: 87px;
+  font-weight: 400;
+  font-family: "Roboto";
+  position: absolute;
 }
 
 @media (min-width: 768px) {
+  .masthead {
+    padding: 15rem 0;
+    height: 780px;
+  }
   .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 156px;
+    line-height: 87px;
+    letter-spacing: 3px;
+  }
+  .masthead h2 {
+    font-size: 46px;
+    top: 54px;
+    left: 210px;
   }
 }
 
 @media (min-width: 992px) {
   .masthead {
-    height: 100vh;
-    padding: 0;
+    height: 1080px;
   }
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
-    letter-spacing: 0.8rem;
-  }
-  .masthead h2 {
-    max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 156px;
+    line-height: 87px;
+    letter-spacing: 3px;
   }
 }
 
@@ -191,17 +253,83 @@
 }
 
 .about-section {
-  padding: 10rem 0;
+  padding: 10rem 5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 5rem 1rem 5rem 2rem;
+  }
 }
 
 .about-section p {
   margin-bottom: 5rem;
+  color: rgba(0, 0, 0, 0.69);
+}
+
+.about-section .description {
+  line-height: 39px;
+  margin-top: -90px;
+}
+
+@media (min-width: 768px) {
+  .about-section .description {
+    display: none;
+  }
+}
+
+.about-section .h1 {
+  font-family: "Roboto" !important;
+  color: black;
+  font-weight: 400 !important;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  width: auto;
+  display: inline-block;
+  font-size: 32px;
+}
+
+.about-section .fas-custom {
+  top: 3px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .about-section .glyph-large {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-section .glyph-small {
+    display: none;
+  }
+}
+
+.about-section .header-url {
+  color: black;
+}
+
+.about-section .header-url:hover {
+  color: black;
+  text-decoration: underline;
 }
 
 .keurmerk {
   width: 380px;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.btn.sign-up {
+  font-family: "Times new Roman";
+  border: 1px solid grey;
+  border-radius: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  color: rgba(0, 0, 0, 0.69);
 }
 
 .projects-section {
@@ -237,8 +365,8 @@
 
 .signup-section {
   padding: 10rem 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/taalcentrum_europoort.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/taalcentrum_europoort.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/header.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -302,7 +430,7 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: "Times new Roman";
   letter-spacing: 0.0625em;
 }
 
@@ -328,5 +456,42 @@ a:focus, a:hover {
 }
 
 footer {
-  padding: 5rem 0;
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 1;
+  font-family: "Helvetica";
+  font-size: 10px !important;
+  font-weight: 100;
+}
+
+.line {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  left: 50%;
+  z-index: -1;
+  margin-left: -1px;
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .line {
+    left: 1.5rem;
+  }
+}
+
+@media (min-width: 780px) {
+  .gutter-2.row {
+    margin-right: -60px;
+    margin-left: -60px;
+  }
+}
+
+@media (min-width: 780px) {
+  .gutter-2 > [class^="col-"],
+  .gutter-2 > [class^=" col-"] {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }

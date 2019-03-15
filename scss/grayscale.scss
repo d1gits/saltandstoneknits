@@ -1,15 +1,15 @@
-@import 'variables.scss';
-@import 'mixins.scss';
-@import 'navbar.scss';
-@import 'masthead.scss';
-@import 'buttons.scss';
-@import 'about.scss';
-@import 'projects.scss';
-@import 'signup.scss';
-@import 'contact.scss';
+@import "variables.scss";
+@import "mixins.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "buttons.scss";
+@import "about.scss";
+@import "projects.scss";
+@import "signup.scss";
+@import "contact.scss";
 
 body {
-  font-family: 'Nunito';
+  font-family: "Times new Roman";
   letter-spacing: 0.0625em;
 }
 
@@ -35,5 +35,37 @@ a {
 }
 
 footer {
-  padding: 5rem 0;
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 1;
+  font-family: "Helvetica";
+  font-size: 10px !important;
+  font-weight: 100;
+}
+.line {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  left: 50%;
+  z-index: -1;
+  margin-left: -1px;
+  background-color: black;
+  @media (max-width: 768px) {
+    left: 1.5rem;
+  }
+}
+
+.gutter-2.row {
+  @media (min-width: 780px) {
+    margin-right: -60px;
+    margin-left: -60px;
+  }
+}
+.gutter-2 > [class^="col-"],
+.gutter-2 > [class^=" col-"] {
+  @media (min-width: 780px) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
