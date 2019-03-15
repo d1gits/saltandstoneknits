@@ -15,14 +15,23 @@
   p {
     margin-bottom: 5rem;
     color: rgba(0, 0, 0, 0.69);
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
   .description {
     line-height: 39px;
     margin-top: -90px;
+    color: rgba(0, 0, 0, 0.69);
     @media (min-width: 768px) {
       display: none;
     }
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 32px;
+    }
   }
+
   .h1 {
     font-family: "Roboto" !important;
     color: black;
@@ -32,6 +41,9 @@
     width: auto;
     display: inline-block;
     font-size: 32px;
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
   }
   .fas-custom {
     top: 3px;
@@ -67,4 +79,7 @@
   border-radius: 0;
   box-shadow: none !important;
   color: rgba(0, 0, 0, 0.69);
+  @media (max-width: 768px) {
+    font-size: 11px;
+  }
 }

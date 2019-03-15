@@ -136,10 +136,10 @@
   width: 100%;
   height: auto;
   background: url("../img/header_image.jpg");
-  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  background-position: right 20% top;
   height: 280px;
 }
 
@@ -199,6 +199,7 @@
 @media (min-width: 768px) {
   .masthead {
     padding: 15rem 0;
+    background-position: center top;
     height: 720px;
   }
   .masthead h1 {
@@ -269,14 +270,28 @@
   color: rgba(0, 0, 0, 0.69);
 }
 
+@media (max-width: 768px) {
+  .about-section p {
+    font-size: 14px;
+  }
+}
+
 .about-section .description {
   line-height: 39px;
   margin-top: -90px;
+  color: rgba(0, 0, 0, 0.69);
 }
 
 @media (min-width: 768px) {
   .about-section .description {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section .description {
+    font-size: 14px;
+    line-height: 32px;
   }
 }
 
@@ -289,6 +304,12 @@
   width: auto;
   display: inline-block;
   font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .about-section .h1 {
+    font-size: 26px;
+  }
 }
 
 .about-section .fas-custom {
@@ -330,6 +351,12 @@
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   color: rgba(0, 0, 0, 0.69);
+}
+
+@media (max-width: 768px) {
+  .btn.sign-up {
+    font-size: 11px;
+  }
 }
 
 .projects-section {

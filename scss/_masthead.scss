@@ -5,11 +5,11 @@
   // min-height: 35rem;
 
   background: url("../img/header_image.jpg");
-  background-position: center top;
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-
+  background-position: right 20% top;
   .hello {
     position: relative;
     padding-bottom: 40px;
@@ -54,6 +54,7 @@
   height: 280px;
   @media (min-width: 768px) {
     padding: 15rem 0;
+    background-position: center top;
     height: 720px;
     h1 {
       font-size: 156px;
