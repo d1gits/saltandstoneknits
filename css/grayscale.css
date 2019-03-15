@@ -215,7 +215,8 @@
 
 @media (min-width: 992px) {
   .masthead {
-    height: 1080px;
+    height: 880px;
+    background-position: center -100px;
   }
   .masthead h1 {
     font-size: 156px;
