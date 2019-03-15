@@ -54,7 +54,6 @@
   height: 280px;
   @media (min-width: 768px) {
     padding: 15rem 0;
-    background-position: center top;
     height: 720px;
     h1 {
       font-size: 156px;
@@ -69,7 +68,7 @@
   }
   @media (min-width: 992px) {
     height: 720px;
-
+    background-position: center top;
     h1 {
       font-size: 156px;
       line-height: 87px;
