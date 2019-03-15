@@ -199,7 +199,6 @@
 @media (min-width: 768px) {
   .masthead {
     padding: 15rem 0;
-    background-position: center top;
     height: 720px;
   }
   .masthead h1 {
@@ -214,9 +213,10 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1292px) {
   .masthead {
     height: 720px;
+    background-position: center top;
   }
   .masthead h1 {
     font-size: 156px;
