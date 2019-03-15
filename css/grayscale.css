@@ -135,7 +135,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  background: url("../img/header.jpg");
+  background: url("../img/header_image.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -199,7 +199,7 @@
 @media (min-width: 768px) {
   .masthead {
     padding: 15rem 0;
-    height: 780px;
+    height: 720px;
   }
   .masthead h1 {
     font-size: 156px;
@@ -215,8 +215,7 @@
 
 @media (min-width: 992px) {
   .masthead {
-    height: 880px;
-    background-position: center -100px;
+    height: 720px;
   }
   .masthead h1 {
     font-size: 156px;

@@ -4,7 +4,7 @@
   height: auto;
   // min-height: 35rem;
 
-  background: url("../img/header.jpg");
+  background: url("../img/header_image.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -54,7 +54,7 @@
   height: 280px;
   @media (min-width: 768px) {
     padding: 15rem 0;
-    height: 780px;
+    height: 720px;
     h1 {
       font-size: 156px;
       line-height: 87px;
@@ -67,8 +67,8 @@
     }
   }
   @media (min-width: 992px) {
-    height: 880px;
-    background-position: center -100px;
+    height: 720px;
+
     h1 {
       font-size: 156px;
       line-height: 87px;
