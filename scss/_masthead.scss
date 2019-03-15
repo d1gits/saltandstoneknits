@@ -26,11 +26,12 @@
     }
   }
   .description {
-    line-height: 39px;
-    width: 415px;
+    line-height: 32px;
+    width: 715px;
+    max-width: 80%;
     margin-top: 40px;
     color: rgba(0, 0, 0, 0.69);
-    @media (max-width: 768px) {
+    @media (max-width: 980px) {
       display: none;
     }
   }

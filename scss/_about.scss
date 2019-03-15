@@ -20,10 +20,11 @@
     }
   }
   .description {
-    line-height: 39px;
+    line-height: 32px;
+
     margin-top: -90px;
     color: rgba(0, 0, 0, 0.69);
-    @media (min-width: 768px) {
+    @media (min-width: 980px) {
       display: none;
     }
     @media (max-width: 768px) {

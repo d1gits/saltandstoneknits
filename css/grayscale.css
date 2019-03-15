@@ -162,13 +162,14 @@
 }
 
 .masthead .description {
-  line-height: 39px;
-  width: 415px;
+  line-height: 32px;
+  width: 715px;
+  max-width: 80%;
   margin-top: 40px;
   color: rgba(0, 0, 0, 0.69);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .masthead .description {
     display: none;
   }
@@ -277,12 +278,12 @@
 }
 
 .about-section .description {
-  line-height: 39px;
+  line-height: 32px;
   margin-top: -90px;
   color: rgba(0, 0, 0, 0.69);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 980px) {
   .about-section .description {
     display: none;
   }
